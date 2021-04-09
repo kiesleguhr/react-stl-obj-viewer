@@ -50524,12 +50524,37 @@ var OBJViewer = function (_Component) {
             camera = new THREE.PerspectiveCamera(30, width / height, 1, 10000);
             scene = new THREE.Scene();
 
-            var directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
+            var directionalLight = new THREE.DirectionalLight(0xffffff, 0.6);
             directionalLight.position.x = 0;
             directionalLight.position.y = 1;
             directionalLight.position.z = 0;
             directionalLight.position.normalize();
             scene.add(directionalLight);
+
+            var directionalLight2 = new THREE.DirectionalLight(0xffffff, 0.6);
+            directionalLight2.position.x = 0;
+            directionalLight2.position.y = -1;
+            directionalLight2.position.z = 0;
+            directionalLight2.position.normalize();
+            scene.add(directionalLight2);
+
+            var directionalLight3 = new THREE.DirectionalLight(0xffffff, 0.6);
+            directionalLight3.position.x = 1;
+            directionalLight3.position.y = 0;
+            directionalLight3.position.z = 0;
+            directionalLight3.position.normalize();
+            scene.add(directionalLight3);
+
+
+
+            var directionalLight4 = new THREE.DirectionalLight(0xffffff, 0.6);
+            directionalLight4.position.x = -1;
+            directionalLight4.position.y = 0;
+            directionalLight4.position.z = 0;
+            directionalLight4.position.normalize();
+            scene.add(directionalLight4);
+
+
 
             var ambientLight = new THREE.AmbientLight(0x404040); // soft white light
 
@@ -74234,7 +74259,7 @@ exports.default = _default;
  * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
- * 
+ *
  */
 
 /*eslint-disable no-self-compare */
